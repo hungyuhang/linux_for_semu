@@ -1,3 +1,6 @@
+This repository is a copy of https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git with branch linux-6.1.y.
+It is a custom version for semu with RTC module.
+
 Linux kernel
 ============
 
