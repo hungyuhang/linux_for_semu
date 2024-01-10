@@ -139,6 +139,8 @@ source "drivers/virt/Kconfig"
 
 source "drivers/virtio/Kconfig"
 
+source "drivers/lupio/Kconfig"
+
 source "drivers/vdpa/Kconfig"
 
 source "drivers/vhost/Kconfig"

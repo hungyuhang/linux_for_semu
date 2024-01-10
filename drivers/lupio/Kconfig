@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: GPL-2.0
+menuconfig LUPIO
+	tristate "LupIO device drivers"
+	depends on HAS_IOMEM
+
+if LUPIO
+
+config LUPIO_RTC
+	tristate "LupIO-rtc driver"
+	depends on LUPIO
+	select RTC_CLASS
+	help
+	  This driver supports a simple real-time clock (RTC) virtual device.
+
+endif
