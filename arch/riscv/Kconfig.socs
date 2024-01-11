@@ -42,6 +42,16 @@ config SOC_VIRT
 	help
 	  This enables support for QEMU Virt Machine.
 
+config SOC_LUPV
+	bool "LupV Machine"
+	select POWER_RESET
+	select POWER_RESET_SYSCON
+	select POWER_RESET_SYSCON_POWEROFF
+	select LUPIO
+	select LUPIO_RTC
+	help
+	  This enables support for LupV Machine.
+
 config SOC_CANAAN
 	bool "Canaan Kendryte K210 SoC"
 	depends on !MMU
